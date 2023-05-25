@@ -1,0 +1,22 @@
+public class Demo2 {
+    public integer a{get;set;}
+    public integer b{get;set;}
+    public integer theta{get;set;}
+    public integer res{get;set;}
+    public double x{get;set;}
+    public void add(){
+        res=a+b;
+    }
+    public void sub(){
+        res=a-b;
+    }
+    public void sine(){
+        x=math.sin(theta*(3.14/180));
+    }
+    public void cosine(){
+        x=math.cos(theta*(3.14/180));
+    }
+    public void tane(){
+        x=math.tan(theta*(3.14/180));
+    }
+}

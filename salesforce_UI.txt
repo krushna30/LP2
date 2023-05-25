@@ -1,0 +1,21 @@
+<apex:page controller="Demo2">
+    <apex:sectionHeader title="Cal" subtitle="Calcii"/>
+    <apex:form >
+    	<apex:pageBlock title="Calculator">
+        	<apex:pageBlockButtons location="bottom">
+            	<apex:commandButton action="{!add}" value="Addition" reRender="re"/>
+                <apex:commandButton action="{!sub}" value="Subtraction" reRender="re"/>
+                <apex:commandButton action="{!sine}" value="Sin" reRender="re1"/>
+                <apex:commandButton action="{!cosine}" value="Cos" reRender="re1"/>
+                <apex:commandButton action="{!tane}" value="Tan" reRender="re1"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection >
+            	<apex:inputText value="{!a}" label="Number1"/>
+                <apex:inputText value="{!b}" label="Number2"/>
+                <apex:outputText label="Result" value="{!res}" id="re"></apex:outputText>
+                <apex:inputText value="{!theta}" label="Enter Theta(in Degree)"/>
+                <apex:outputText label="Trigno Value" value="{!x}" id="re1"></apex:outputText>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
