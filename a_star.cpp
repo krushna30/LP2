@@ -27,7 +27,7 @@ bool ispos(int st[])
                 cnt++;
         }
     }
-    // cout << cnt << endl;
+
     return cnt & 1 ? 0 : 1;
 }
 void copy(int a1[], int a2[])
